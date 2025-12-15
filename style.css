@@ -1,0 +1,44 @@
+/* Widget flutuante */
+#fiesc-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 260px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 99999; /* garante que fique acima de outros plugins */
+}
+
+#fiesc-widget h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+#fiesc-widget select,
+#fiesc-widget textarea {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#fiesc-widget button {
+    width: 100%;
+    background: #005ca9;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#fiesc-widget button:hover {
+    background: #004080;
+}
+
+/* Lista administrativa */
+.fiesc-feedback-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
