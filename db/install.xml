@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/fiesc/db" VERSION="2025121201" COMMENT="Estrutura de banco do plugin FIESC">
+  <TABLES>
+    <TABLE NAME="local_fiesc_feedback" COMMENT="Tabela de feedbacks do plugin FIESC">
+      <FIELDS>
+
+        <FIELD NAME="id"
+               TYPE="int"
+               LENGTH="10"
+               NOTNULL="true"
+               SEQUENCE="true"
+               COMMENT="ID do registro"/>
+
+        <FIELD NAME="userid"
+               TYPE="int"
+               LENGTH="10"
+               NOTNULL="true"
+               COMMENT="ID do usuário"/>
+
+        <FIELD NAME="rating"
+               TYPE="int"
+               LENGTH="1"
+               NOTNULL="true"
+               COMMENT="Nota de avaliação de 1 a 5"/>
+
+        <FIELD NAME="comment"
+               TYPE="text"
+               NOTNULL="false"
+               COMMENT="Comentário opcional"/>
+
+        <FIELD NAME="pageurl"
+               TYPE="text"
+               NOTNULL="true"
+               COMMENT="URL da página avaliada"/>
+
+        <FIELD NAME="timecreated"
+               TYPE="int"
+               LENGTH="10"
+               NOTNULL="true"
+               COMMENT="Timestamp de criação"/>
+      </FIELDS>
+
+      <KEYS>
+        <KEY NAME="primary"
+             TYPE="primary"
+             FIELDS="id"
+             COMMENT="Chave primária"/>
+      </KEYS>
+
+    </TABLE>
+  </TABLES>
+</XMLDB>
